@@ -11,6 +11,7 @@ const AllProjects = () => {
 		<div className="all-projects-container">
 			{INFO.projects.map((project, index) => (
 				<div className="all-projects-project" key={index}>
+					<img src={project.image} style={{ width: '180px', height: '100px' }} />
 					<Project
 						logo={project.logo}
 						title={project.title}

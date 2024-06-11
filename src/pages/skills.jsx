@@ -1,17 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaPhp, FaLaravel, FaJava, FaBootstrap } from 'react-icons/fa';
-import { SiFlutter, SiSpring, SiVuedotjs, SiAngular, SiPostgresql, SiCodeigniter, SiExpress, SiTailwindcss } from 'react-icons/si';
+import { SiFlutter, SiSpring, SiVuedotjs, SiPostgresql, SiCodeigniter, SiTailwindcss } from 'react-icons/si';
 import { Tooltip } from 'react-tooltip';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
+import './style/skills.css';
 
 const techList = [
   { name: 'HTML', icon: <FaHtml5 color="#E34F26" />, link: 'https://github.com/mrnurihsann/perhiasan.git' },
-  { name: 'CSS', icon: <FaCss3Alt color="#1572B6" />, link: 'https://github.com/mrnurihsann/perhiasan.git' },
+  { name: 'CSS', icon: <FaCss3Alt color="#1572B6" />, link: 'https://github.com/mrnurihsann/desa-wotawati.git' },
   { name: 'JavaScript', icon: <FaJs color="#F7DF1E" />, link: 'https://github.com/mrnurihsann/Gema-45.git' },
   { name: 'React', icon: <FaReact color="#61DAFB" />, link: 'https://github.com/mrnurihsann/movie-react.git' },
   { name: 'Node.js', icon: <FaNodeJs color="#339933" />, link: 'https://github.com/mrnurihsann' },
@@ -28,6 +29,16 @@ const techList = [
 ];
 
 const Skills = () => {
+  const [hoveredTech, setHoveredTech] = useState(null);
+
+  const handleIconHover = (techName) => {
+    setHoveredTech(techName);
+  };
+
+  const handleIconLeave = () => {
+    setHoveredTech(null);
+  };
+
   const handleIconClick = (techName) => {
     toast.info(`Navigating to ${techName} projects on GitHub...`);
   };
@@ -35,26 +46,31 @@ const Skills = () => {
   return (
     <div>
       <Helmet>
-        <title>Skills Page</title>
+        <title>Skills | mrnurihsann Porto</title>
       </Helmet>
       <NavBar active="skills" />
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '20px', justifyItems: 'center', padding: '20px' }}>
-        {techList.map((tech) => (
-          <a 
-            key={tech.name} 
-            href={tech.link} 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            style={{ textDecoration: 'none', color: 'inherit', textAlign: 'center' }}
-            data-tip={`Go to ${tech.name} projects on GitHub`}
-            onClick={() => handleIconClick(tech.name)}
-          >
-            <div style={{ fontSize: '50px', transition: 'transform 0.2s' }} className="icon">
-              {tech.icon}
-            </div>
-            <div>{tech.name}</div>
-          </a>
-        ))}
+      <div className="skills-container">
+        <h1>Programming languages ​​that I master and that I have studied</h1>
+        <div className="icons-grid">
+          {techList.map((tech) => (
+            <a 
+              key={tech.name} 
+              href={tech.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="icon-wrapper"
+              data-tip={`Go to ${tech.name} projects on GitHub`}
+              onClick={() => handleIconClick(tech.name)}
+              onMouseEnter={() => handleIconHover(tech.name)}
+              onMouseLeave={handleIconLeave}
+            >
+              <div className={`icon ${hoveredTech === tech.name ? 'hovered' : ''}`}>
+                {tech.icon}
+              </div>
+              <div className="icon-name">{tech.name}</div>
+            </a>
+          ))}
+        </div>
         <Tooltip />
         <ToastContainer position="bottom-right" />
       </div>

@@ -29,6 +29,7 @@ const INFO = {
 	projects: [
 		{
 			title: "React",
+			image: "/cinema.png",
 			description:
 				"Create a movie viewing experience",
 			logo: "https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png",
@@ -38,6 +39,7 @@ const INFO = {
 
 		{
 			title: "PHP",
+			image: "/klajatrif.png",
 			description:
 				"Create a website selling second clothes",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/php/php.png",
@@ -47,6 +49,7 @@ const INFO = {
 
 		{
 			title: "HTML 5",
+			image: "/perhiasan.png",
 			description:
 				"Create a website for selling jewelry",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
@@ -56,6 +59,7 @@ const INFO = {
 
 		{
 			title: "JavaScript",
+			image: "/gema.png",
 			description:
 				"Create a simple project using javascript",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
@@ -65,6 +69,7 @@ const INFO = {
 
 		{
 			title: "JavaScript",
+			image: "/cinema.png",
 			description:
 				"Create a movie viewing experience",
 			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
@@ -73,43 +78,38 @@ const INFO = {
 		},
 
 		{
-			title: "Postgree SQL",
+			title: "HTML 5",
+			image: "/shoes.png",
 			description:
-				"PostgreSQL is a powerful, open source object-relational database system with over 35 years of active development that has earned it a strong reputation for reliability",
-			logo: "https://seeklogo.com/images/P/postgre-sql-logo-600AD1A66B-seeklogo.com.png",
+				"create a shoe shop website using HTML, CSS, JavaScript",
+			logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/html/html.png",
 			linkText: "View Project",
-			link: "https://github.com/mrnurihsann",
-		},
-
-		{
-			title: "Node Js",
-			description:
-				"Node.js is an open-source and cross-platform JavaScript runtime environment. It is a popular tool for almost any kind of project!",
-			logo: "https://seeklogo.com/images/N/node-node-js-logo-81A4CC16D2-seeklogo.com.png",
-			linkText: "View Project",
-			link: "https://github.com/mrnurihsann",
+			link: "https://github.com/mrnurihsann/shoes-store.git",
 		},
 
 		{
 			title: "Next Js",
+			image: "/cinemanext.png",
 			description:
-				"Next.js is a React framework for building full-stack web applications.",
+				"Create a movie viewing experience",
 			logo: "https://seeklogo.com/images/N/next-js-logo-60FB9B8D2B-seeklogo.com.png",
 			linkText: "View Project",
-			link: "https://github.com/mrnurihsann",
+			link: "https://github.com/mrnurihsann/movie-react.git",
 		},
 
 		{
 			title: "Vue Js",
+			image: "/shoe.png",
 			description:
-				"Vue (pronounced /vjuː/, like view) is a JavaScript framework for building user interfaces.",
+				"create a simple shoe sales website using vue js",
 			logo: "https://seeklogo.com/images/V/vuejs-logo-17D586B587-seeklogo.com.png",
 			linkText: "View Project",
-			link: "https://github.com/mrnurihsann",
+			link: "https://github.com/mrnurihsann/vue-layout.git",
 		},
 
 		{
 			title: "Java",
+			image: "/mk.png",
 			description:
 				"Create a simple course assessment application",
 			logo: "https://seeklogo.com/images/J/java-logo-7833D1D21A-seeklogo.com.png",
@@ -119,6 +119,7 @@ const INFO = {
 
 		{
 			title: "Flutter",
+			image: "/moviemm.png",
 			description:
 				"Create a mobile-based cinema ticket sales application",
 			logo: "https://seeklogo.com/images/F/flutter-logo-5086DD11C5-seeklogo.com.png",
@@ -128,15 +129,17 @@ const INFO = {
 
 		{
 			title: "CSS 3",
+			image: "/desaww.png",
 			description:
-				"Create a website for selling jewelry",
+				"create a website for Wotawati village",
 			logo: "https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png",
 			linkText: "View Project",
-			link: "https://github.com/mrnurihsann/perhiasan.git",
+			link: "https://github.com/mrnurihsann/desa-wotawati.git",
 		},
 
 		{
 			title: "Bootstrap",
+			image: "/klajamall.png",
 			description:
 				"Create website-based online shopping",
 			logo: "https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png",
@@ -146,8 +149,9 @@ const INFO = {
 
 		{
 			title: "Tailwind",
+			image: "/shoe.png",
 			description:
-				"Tailwind CSS is the only framework that I've seen scale on large teams. It’s easy to customize, adapts to any design, and the build size is tiny",
+				"create a simple shoe sales website using taildwind",
 			logo: "https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png",
 			linkText: "View Project",
 			link: "https://github.com/mrnurihsann",
@@ -155,6 +159,7 @@ const INFO = {
 
 		{
 			title: "Dart",
+			image: "/dart.png",
 			description:
 				"Create a display like a simple location",
 			logo: "https://seeklogo.com/images/D/dart-logo-FDA1939EC4-seeklogo.com.png",

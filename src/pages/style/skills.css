@@ -1,0 +1,39 @@
+.skills-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .icons-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .icon-wrapper {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .icon {
+    font-size: 50px;
+    transition: transform 0.2s;
+  }
+  
+  .icon.hovered {
+    transform: scale(1.2);
+  }
+  
+  .icon-name {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

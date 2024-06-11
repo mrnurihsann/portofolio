@@ -1,0 +1,29 @@
+.certificate-container {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .certificate-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .certificate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .certificate-name {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  .certificate-description {
+    margin-top: 5px;
+    color: #555;
+  }
+  

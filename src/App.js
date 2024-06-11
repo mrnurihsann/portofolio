@@ -7,6 +7,7 @@ import About from "./pages/about";
 import Projects from "./pages/project";
 import Skills  from "./pages/skills";
 import Contact from "./pages/contact";
+import Certificates from "./pages/certificates";
 import Notfound from "./pages/404";
 
 import { TRACKING_ID } from "./data/tracking";
@@ -27,6 +28,7 @@ function App() {
 				<Route path="/projects" element={<Projects />} />
 				<Route path="/skills" element={<Skills />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/certificates" element={<Certificates />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>
