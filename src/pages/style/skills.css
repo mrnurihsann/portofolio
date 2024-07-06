@@ -1,39 +1,63 @@
 .skills-container {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  h1 {
-    margin-bottom: 20px;
-  }
-  
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.icons-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.icon-wrapper {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.icon {
+  font-size: 50px;
+  transition: transform 0.2s;
+}
+
+.icon.hovered {
+  transform: scale(1.2);
+}
+
+.icon-name {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
   .icons-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
-    justify-items: center;
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Adjust the number of columns for tablets and mobile */
+    gap: 15px; /* Adjust gap */
   }
-  
-  .icon-wrapper {
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    position: relative;
-    display: inline-block;
+}
+
+@media (max-width: 480px) {
+  .icons-grid {
+    grid-template-columns: repeat(3, 1fr); /* Keep 3 columns for mobile */
+    gap: 10px; /* Further reduce gap */
   }
-  
+
   .icon {
-    font-size: 50px;
-    transition: transform 0.2s;
+    font-size: 40px; /* Adjust icon size */
   }
-  
-  .icon.hovered {
-    transform: scale(1.2);
-  }
-  
+
   .icon-name {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 14px; /* Adjust font size */
   }
-  
+}
