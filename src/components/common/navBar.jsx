@@ -41,13 +41,6 @@ const NavBar = (props) => {
               >
                 <Link to="/contact">Contact</Link>
               </li>
-              <li
-                className={
-                  active === "certificates" ? "nav-item active" : "nav-item"
-                }
-              >
-                <Link to="/certificates">Sertif</Link>
-              </li>
             </ul>
           </div>
         </nav>

@@ -30,6 +30,7 @@ import "react-toastify/dist/ReactToastify.css";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import "./style/skills.css";
+import INFO from "../data/user";
 
 const techList = [
   {
@@ -156,7 +157,7 @@ const Skills = () => {
   return (
     <div>
       <Helmet>
-        <title>Skills | mrnurihsann Porto</title>
+        <title>{`Skills | ${INFO.main.title}`}</title>
       </Helmet>
       <NavBar active="skills" />
       <div className="skills-container">
