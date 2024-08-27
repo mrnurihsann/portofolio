@@ -6,6 +6,10 @@ const INFO = {
     logo: "../me.png",
   },
 
+  contact: {
+    phone: "https://wa.me/089652171686", // Replace with your actual phone number
+  },
+
   socials: {
     github: "https://github.com/mrnurihsann",
     linkedin:
@@ -13,6 +17,7 @@ const INFO = {
     instagram: "https://instagram.com/mrnurihsann",
     stackoverflow: "https://stackoverflow.com/",
     facebook: "https://facebook.com/",
+    phone: "+6289652171686",
   },
 
   homepage: {

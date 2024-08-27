@@ -44,6 +44,16 @@ const NavBar = (props) => {
             </ul>
           </div>
         </nav>
+
+        <div className="download-cv-container">
+          <a
+            href="/doc/Nur-Ihsan.pdf"
+            download="myCurillumVitae.pdf"
+            className="download-cv-button"
+          >
+            Download CV
+          </a>
+        </div>
       </div>
     </React.Fragment>
   );
