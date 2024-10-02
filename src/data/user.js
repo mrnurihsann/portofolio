@@ -177,6 +177,15 @@ const INFO = {
       linkText: "View Project",
       link: "https://github.com/mrnurihsann/rep-carhatt.git",
     },
+
+    {
+      title: "JavaScript",
+      image: "/blog.png",
+      description: "Create a simple website about Blogger",
+      logo: "https://cdn.jsdelivr.net/npm/programming-languages-logos/src/javascript/javascript.png",
+      linkText: "View Project",
+      link: "https://github.com/mrnurihsann/blogger.git",
+    },
   ],
 };
 
