@@ -60,6 +60,16 @@ const certificates = [
     imgSrc: "assets/react.png",
     description: "FullStact JavaScript Developer With Express and React",
   },
+  {
+    name: "Internship as a SOC Analyst",
+    imgSrc: "assets/magang.png",
+    description: "Certificate for Internship as a SOC Analyst",
+  },
+  {
+    name: "Universitas Teknologi Digital Indonesia",
+    imgSrc: "assets/unifest.jpg",
+    description: "Certificate for Certificate for Unifest activities",
+  },
 ];
 
 const Certificates = () => {

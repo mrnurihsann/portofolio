@@ -47,8 +47,8 @@ const NavBar = (props) => {
 
         <div className="download-cv-container">
           <a
-            href="/doc/Resume.pdf"
-            download="Nur Ihsan-Resume.pdf"
+            href="/doc/mrnurihsann-resume.pdf"
+            download="mrnurihsann-resume.pdf"
             className="download-cv-button"
           >
             Download CV
